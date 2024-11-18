@@ -195,6 +195,8 @@ git merge feature-login
 
 >`merge` -> it will integrate changes from one branch into another .
 
+<br></br>
+
 # <ins> Task 8 : Handling Merge Conflicts </ins>
 ## 1. Create two Branches :
 ```bash
@@ -241,7 +243,7 @@ git commit -m "resolved merge conflict between branch-A and branch-B "
 > ### <ins> Solution: </ins>
 this will add the file and commit the changes done .
 
-
+<br></br>
 
 # <ins> Task 9 : Renaming and Deleting Branches </ins>
 ## 1. Rename a Branch :
@@ -302,6 +304,8 @@ it is used to delete a specific stash from the stash list .
 
 >This is useful when you no longer need a stash and want to clean up your stash list .
 
+<br></br>
+
 # <ins> Task 11 : Rewriting History with Interactive Rebase </ins>
 ## 1. Create multiple commits :
 ```bash
@@ -317,4 +321,125 @@ the commands create three new files (`file1.txt`, `file2.txt`, `file3.txt`), add
 git rebase -i HEAD~3
 ```
 > ### <ins> Solution: </ins>
+this command starts an interactive rebase for the last three commits in the current branch .
 
+>it allows to edit, reorder, squash, or drop commits in a clean and controlled way.
+
+<br></br>
+
+# <ins> Task 12 : Cherry-Picking Commits </ins>
+## 1. Create a new branch :
+```bash
+git checkout -b cherry-pick-example
+```
+> ### <ins> Solution: </ins>
+the commands create a new branch and switch to the the branch created .
+
+## 2. Cherry-pick a specific commit from another branch :
+```bash
+git cherry-pick <commit-hash>
+```
+> ### <ins> Solution: </ins>
+the command is used to apply the changes introduced by a specific commit from one branch to another branch .
+
+> it creates a new commit on the current branch that duplicates the changes from the referenced commit .
+
+<br></br>
+
+# <ins> Task 13 : Tagging Commits </ins>
+## 1. Tag the current commit :
+```bash
+git tag -a v1.0 -m "Version 1.0 release"
+```
+> ### <ins> Solution: </ins>
+`tag` -> creates a tag in git . tags are used to mark specific points in the commit history, often for releases or important milestones .
+
+> ` -a v1.0 ` -> Specifies the tag name (v1.0) 
+
+> `-a` flag indicates that this is an annotated tag, which includes metadata like the tagger's name, email, and a message .
+
+> `-m "Version 1.0 release" ` -> provides a message describing the tag .
+this message is stored with the tag and can be viewed later .
+
+## 2. Push the tag to the remote repository :
+```bash
+git push origin v1.0
+```
+> ### <ins> Solution: </ins>
+it is used to push the branch or tag named `v1.0` to the remote repository named origin .
+
+<br></br>
+
+# <ins> Task 14 : Working with Remote Repositories </ins>
+## 1. Add a remote repository :
+```bash
+git remote add origin <repository-url>
+```
+> ### <ins> Solution: </ins>
+it is used to add a remote repository to your local Git repository .
+
+## 2. Push your changes to the remote repository :
+```bash
+git push origin main
+```
+> ### <ins> Solution: </ins>
+it is used to push the the changes from your local main branch to the main branch on the remote repository named origin .
+
+<br></br>
+
+# <ins> Task 15 : Forking and Contributing </ins>
+## 1. Fork a repository on GitHub.
+## 2. Clone the fork locally :
+```bash
+git clone <forked-repo-url>
+```
+> ### <ins> Solution: </ins>
+it is used to create a local copy of a repository from a remote source.
+
+## 3. Create a new branch, make changes, and push :
+```bash
+git checkout -b fix-typo
+echo "Typo fixed" >> README.md
+git add README.md
+git commit -m "Fixed a typo"
+git push origin fix-typo
+```
+> ### <ins> Solution: </ins>
+`checkout -b` -> use to make a new branch and switch to it .
+
+> ` echo "content" >> file_name` -> use to make new file and add content in it .
+
+>`add` -> it is use to add a file to git repository .
+
+> `commit -m` -> used to commit the made changes .
+
+> `push origin` -> use to push th changes to the main branch in the git repository .
+
+## 4. Open a pull request on GitHub.
+
+<br></br>
+<hr></hr>
+<br></br>
+
+# ** Part-4: Additional Practice **
+# <ins> Task 16 : Simulate Team Collaboration </ins>
+## 1. Create a repository and share it with a friend
+## 2.Both make changes to the same file simultaneously
+## 3.Practice resolving merge conflicts and pushing changes
+
+
+# <ins> Task 17 : Git Ignore </ins>
+## 1. Create a `.gitignore` file :
+```bash
+echo "node_modules/" > .gitignore
+```
+> ### <ins> Solution: </ins>
+it  adds the `node_modules/` directory to a `.gitignore` file, which tells git to ignore the `node_modules` directory in the version control system .
+
+
+## 2. Add files and ensure ignored files are not staged :
+```bash
+git add .
+```
+> ### <ins> Solution: </ins>
+it adds all the files to the git from your local machine .
