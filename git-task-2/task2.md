@@ -8,7 +8,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
 ```
 > ### <ins> Solution: </ins>
- git config is used to configure git settings, such as username, email .
+>git config is used to configure git settings, such as username, email .
 
  >Using `--global` applies the settings globally for all repositories.
 
@@ -17,7 +17,7 @@ git config --global user.email "your-email@example.com"
 git config --list
 ```
 > ### <ins> Solution: </ins>
- displays a list of all the git configuration settings currently in effect .
+>displays a list of all the git configuration settings currently in effect .
 
 >it includes global, system, and local configurations, showing details like username, email, and other preferences . 
 
@@ -31,7 +31,7 @@ cd MyProject
 git init
 ```
 > ### <ins> Solution: </ins>
- `mkdir folder_name` -> it is used to make new folder in current directory.
+ >`mkdir folder_name` -> it is used to make new folder in current directory.
 
  > `cd folder_name ` -> it is used to move into that folder .
 
@@ -49,7 +49,7 @@ echo "Hello Git" > file1.txt
 ```
 
 > ### <ins> Solution: </ins>
-it is used to make a new file with some content written in double quotes .
+>it is used to make a new file with some content written in double quotes .
 
 ## 2. Stage and commit the file :
 ```bash
@@ -58,7 +58,7 @@ git commit -m "Initial commit: Added file1.txt"
 ```
 
 > ### <ins> Solution: </ins>
-`add` -> it is use to add file to the git repository .
+>`add` -> it is use to add file to the git repository .
 
 > `commit -m` -> it is used to commit the changes done .
 
@@ -70,7 +70,7 @@ git commit -m "Initial commit: Added file1.txt"
 echo "Git is awesome!" >> file1.txt
 ```
 > ### <ins> Solution: </ins>
-it is used to update the pre-existing file .
+>it is used to update the pre-existing file .
 
 ## 2. Check file status and differences :
 ```bash
@@ -78,7 +78,7 @@ git status
 git diff
 ```
 > ### <ins> Solution: </ins>
-`status` ->  it is used to check the status of the current working directory and staging area .
+>`status` ->  it is used to check the status of the current working directory and staging area .
 it provides information about the untracked files ,changes not staged for commit, changes to be committed .
 
 > `diff` -> is used to view the differences between repository states, like the working directory, staging area, or commits . it is useful for reviewing changes before committing .
@@ -91,14 +91,14 @@ it provides information about the untracked files ,changes not staged for commit
 git reset file1.txt
 ```
 > ### <ins> Solution: </ins>
-it is used to unstage changes to `file1.txt` that were added to the staging area, without affecting the working directory .
+>it is used to unstage changes to `file1.txt` that were added to the staging area, without affecting the working directory .
 
 ## 2.Discard uncommitted changes :
 ```bash
 git checkout -- file1.txt
 ```
 > ### <ins> Solution: </ins>
-it  is used to discard all local changes made to `file1.txt` , restoring it to the state of the last commit .
+>it  is used to discard all local changes made to `file1.txt` , restoring it to the state of the last commit .
 
 <br></br>
 <hr></hr>
@@ -112,7 +112,7 @@ git checkout -b feature-branch
 ```
 
 > ### <ins> Solution: </ins>
-it is used to create a new branch and switch to it directly .
+>it is used to create a new branch and switch to it directly .
 
 ## 2. List branches :
 ```bash
@@ -120,7 +120,7 @@ git branch
 ```
 
 > ### <ins> Solution: </ins>
-it is used to manage and view branches in a Git repository . 
+>it is used to manage and view branches in a Git repository . 
 
 > it allow us to work on different versions of your project simultaneously .
 
@@ -129,7 +129,7 @@ it is used to manage and view branches in a Git repository .
 git branch -m feature-branch feature-enhanced
 ```
 > ### <ins> Solution: </ins>
-it is used to change the name of a branch created already .
+>it is used to change the name of a branch created already .
 
 <br></br>
 
@@ -140,7 +140,7 @@ git checkout main
 git merge feature-enhanced
 ```
 > ### <ins> Solution: </ins>
-`checkout` -> used to switch the branch .
+>`checkout` -> used to switch the branch .
 
 > `merge` -> used to merge different branches .
 
@@ -152,7 +152,7 @@ git merge feature-enhanced
 git merge <branch-name>
 ```
 > ### <ins> Solution: </ins>
- `merge` -> used to merge different branches .
+> `merge` -> used to merge different branches .
 
 ## 2. Use :
 ```bash
@@ -160,7 +160,7 @@ git add <resolved-file>
 git commit
 ```
 > ### <ins> Solution: </ins>
- `add` -> used to add the file to the git repository .
+> `add` -> used to add the file to the git repository .
 
  > `commit` -> used to commit the changes done .
 
@@ -176,14 +176,14 @@ git remote add origin https://github.com/your-username/repo.git
 ```
 
 > ### <ins> Solution: </ins>
-it is used to link your local Git repository to a remote repository hosted on a platform like GitHub .
+>it is used to link your local Git repository to a remote repository hosted on a platform like GitHub .
 
 ## 2. Verify the remote :
 ```bash
 git remote -v
 ```
 > ### <ins> Solution: </ins>
-displays the remote repositories associated with your local Git repository and their URLs .
+>displays the remote repositories associated with your local Git repository and their URLs .
 
 <br></br>
 
@@ -193,14 +193,14 @@ displays the remote repositories associated with your local Git repository and t
 git push -u origin main
 ```
 > ### <ins> Solution: </ins>
-it is use to push the changes made to the remote repository .
+>it is use to push the changes made to the remote repository .
 
 ## 2. Pull changes from the remote :
 ```bash
 git pull origin main
 ```
 > ### <ins> Solution: </ins>
-it is use to pull the changes from the remote repository to the local .
+>it is use to pull the changes from the remote repository to the local .
 
 <br></br>
 
@@ -210,7 +210,7 @@ it is use to pull the changes from the remote repository to the local .
 git clone https://github.com/your-username/repo.git
 ```
 > ### <ins> Solution: </ins>
-it is used create a local copy of a remote repository from GitHub to the local machine .
+>it is used create a local copy of a remote repository from GitHub to the local machine .
 
 <br></br>
 <hr></hr>
@@ -223,14 +223,14 @@ it is used create a local copy of a remote repository from GitHub to the local m
 git stash
 ```
 > ### <ins> Solution: </ins>
-temporarily saves your uncommitted changes (both staged and unstaged) and cleans your working directory .
+>temporarily saves your uncommitted changes (both staged and unstaged) and cleans your working directory .
 
 ## 2. Apply stashed changes :
 ```bash
 git stash apply
 ```
 > ### <ins> Solution: </ins>
-it is used to reapply the most recent stash entry to your working directory .
+>it is used to reapply the most recent stash entry to your working directory .
 
 > it does not remove the stash from the stash list, so you can reuse it later if needed .
 
@@ -239,7 +239,7 @@ it is used to reapply the most recent stash entry to your working directory .
 git stash drop
 ```
 > ### <ins> Solution: </ins>
-it removes a specific stash entry from the stash list . it is used when you no longer need a particular stash after applying or reviewing it .
+>it removes a specific stash entry from the stash list . it is used when you no longer need a particular stash after applying or reviewing it .
 
 > If no stash is specified, `git stash drop` removes the most recent stash .
 
@@ -251,7 +251,7 @@ it removes a specific stash entry from the stash list . it is used when you no l
 git tag -a v1.0 -m "Version 1.0 release"
 ```
 > ### <ins> Solution: </ins>
-`tag` -> creates a tag in git . tags are used to mark specific points in the commit history, often for releases or important milestones .
+>`tag` -> creates a tag in git . tags are used to mark specific points in the commit history, often for releases or important milestones .
 
 > ` -a v1.0 ` -> Specifies the tag name (v1.0) 
 
@@ -265,7 +265,7 @@ this message is stored with the tag and can be viewed later .
 git push origin v1.0
 ```
 > ### <ins> Solution: </ins>
-it is used to push the branch or tag named `v1.0` to the remote repository named origin .
+>it is used to push the branch or tag named `v1.0` to the remote repository named origin .
 
 <br></br>
 
@@ -275,7 +275,7 @@ it is used to push the branch or tag named `v1.0` to the remote repository named
 git rebase -i HEAD~3
 ```
 > ### <ins> Solution: </ins>
-this command starts an interactive rebase for the last three commits in the current branch .
+>this command starts an interactive rebase for the last three commits in the current branch .
 
 >it allows to edit, reorder, squash, or drop commits in a clean and controlled way.
 
@@ -287,7 +287,7 @@ this command starts an interactive rebase for the last three commits in the curr
 git cherry-pick <commit-hash>
 ```
 > ### <ins> Solution: </ins>
-the command is used to apply the changes introduced by a specific commit from one branch to another branch .
+>the command is used to apply the changes introduced by a specific commit from one branch to another branch .
 
 > it creates a new commit on the current branch that duplicates the changes from the referenced commit .
 
@@ -302,7 +302,7 @@ the command is used to apply the changes introduced by a specific commit from on
 git clone https://github.com/your-username/forked-repo.git
 ```
 > ### <ins> Solution: </ins>
-it is used to copy a forked repository from GitHub to your local machine . this allows you to work on the forked repository locally, make changes, and push updates back to your fork .
+>it is used to copy a forked repository from GitHub to your local machine . this allows you to work on the forked repository locally, make changes, and push updates back to your fork .
 
 ## 2. Make changes and push them :
 ```bash
@@ -312,7 +312,7 @@ git commit -m "Fixed a typo"
 git push origin fix-typo
 ```
 > ### <ins> Solutions: </ins>
-`checkout -b` -> creates a new branch and switch to it .
+>`checkout -b` -> creates a new branch and switch to it .
 
 > `echo " " >> file_name ` -> used to update the file content .
 
@@ -342,7 +342,7 @@ git add .gitignore
 git commit -m "Added .gitignore"
 ```
 > ### <ins> Solution: </ins>
- `echo " " > file_name ` -> used to create a new file and add some content into it .
+ >`echo " " > file_name ` -> used to create a new file and add some content into it .
 
  > `add .` -> it is used to add all the files to the git repository .
 
@@ -353,7 +353,7 @@ git commit -m "Added .gitignore"
 git status
 ```
 > ### <ins> Solution: </ins>
- displays the current state of your git working directory and staging area .
+> displays the current state of your git working directory and staging area .
  
 <br></br>
 <hr></hr>
@@ -366,7 +366,7 @@ git status
 git clean -f
 ```
 > ### <ins> Solution: </ins>
-it is used to delete untracked files from your working directory . 
+>it is used to delete untracked files from your working directory . 
 
 > this is useful when you want to clean up unnecessary files that git is not tracking .
 
@@ -377,7 +377,7 @@ git config --global alias.st status
 git config --global alias.cm commit
 ```
 > ### <ins> Solution: </ins>
-`git config` -> Modifies Git's configuration files.
+>`git config` -> Modifies Git's configuration files.
 
 > `--global` -> Applies the configuration globally for all repositories on your system.
 
@@ -391,7 +391,7 @@ git st
 git cm -m "Message"
 ```
 > ### <ins> Solution: </ins>
-`git st` -> Execute the git status.
+>`git st` -> Execute the git status.
 
 > `git cm -m "Message" ` -> Execute the git commit in "message".
  

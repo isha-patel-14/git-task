@@ -8,14 +8,14 @@
 echo "Temporary changes" >> temp-file.txt
 ```
 > ### <ins> Solution: </ins>
-this will make a new file if does not exist and append some content to it .
+>this will make a new file if does not exist and append some content to it .
 
 ## 2. View the status of changes :
 ```bash
 git status
 ```
 > ### <ins> Solution: </ins>
- it is used to check the status of the current working directory and staging area .
+> it is used to check the status of the current working directory and staging area .
 
 > it provides information about the untracked files ,changes not staged for commit, changes to be committed .
 
@@ -24,7 +24,7 @@ git status
 git stash
 ```
 > ### <ins> Solution: </ins>
-temporarily saves your uncommitted changes (both staged and unstaged) and cleans your working directory .
+>temporarily saves your uncommitted changes (both staged and unstaged) and cleans your working directory .
 
 > This command saves changes to a stash and restores the working directory to the last commit state.
 
@@ -33,7 +33,7 @@ temporarily saves your uncommitted changes (both staged and unstaged) and cleans
 git stash list
 ```
 > ### <ins> Solution: </ins>
-it is used to display a list of all the stashes you have saved in your repository .
+>it is used to display a list of all the stashes you have saved in your repository .
 
 <br></br>
 
@@ -43,7 +43,7 @@ it is used to display a list of all the stashes you have saved in your repositor
 git stash apply
 ```
 > ### <ins> Solution: </ins>
-it is used to reapply the most recent stash entry to your working directory .
+>it is used to reapply the most recent stash entry to your working directory .
 
 > it does not remove the stash from the stash list, so you can reuse it later if needed .
 
@@ -52,7 +52,7 @@ it is used to reapply the most recent stash entry to your working directory .
 git stash drop
 ```
 > ### <ins> Solution: </ins>
-it removes a specific stash entry from the stash list . it is used when you no longer need a particular stash after applying or reviewing it .
+>it removes a specific stash entry from the stash list . it is used when you no longer need a particular stash after applying or reviewing it .
 
 > If no stash is specified, `git stash drop` removes the most recent stash .
 
@@ -61,7 +61,7 @@ it removes a specific stash entry from the stash list . it is used when you no l
 git stash apply stash@{1}
 ```
 > ### <ins> Solution: </ins>
-it  is used to apply a specific stash from the stash list .
+>it  is used to apply a specific stash from the stash list .
 
 > `git stash apply` -> applies the changes saved in a specific stash to your working directory . this does not remove the stash from the list of stashes .
 
@@ -75,7 +75,7 @@ it  is used to apply a specific stash from the stash list .
 git stash -u
 ```
 > ### <ins> Solution: </ins>
-it is used to stash both tracked and untracked files in your git working directory .
+>it is used to stash both tracked and untracked files in your git working directory .
 
 > `-u ( or --include-untracked )` -> in addition to stashing tracked changes, this flag also stashes untracked files .
 
@@ -84,7 +84,7 @@ it is used to stash both tracked and untracked files in your git working directo
 git stash apply
 ```
 > ### <ins> Solution: </ins>
-it is used to reapply the changes saved in the most recent stash or a specific stash without removing it from the stash list .
+>it is used to reapply the changes saved in the most recent stash or a specific stash without removing it from the stash list .
 
 <br></br>
 <hr></hr>
@@ -97,7 +97,7 @@ it is used to reapply the changes saved in the most recent stash or a specific s
 git rebase main
 ```
 > ### <ins> Solution: </ins>
-`git rebase main` is used to rebase the current branch onto the main branch .
+>`git rebase main` is used to rebase the current branch onto the main branch .
 
 > `git rebase` -> rebase command allows you to take all the changes (commits) from your current branch and apply them on top of another branch .
 
@@ -108,7 +108,7 @@ git rebase main
 git rebase --continue
 ```
 > ### <ins> Solution: </ins>
-it  is used during a rebase operation to resume the process after you've resolved any merge conflicts .
+>it  is used during a rebase operation to resume the process after you've resolved any merge conflicts .
 
 <br></br>
 
@@ -118,7 +118,7 @@ it  is used during a rebase operation to resume the process after you've resolve
 git rebase --abort
 ```
 > ### <ins> Solution: </ins>
-it is used to abort the rebase process and return your repository to the state it was in before you started the rebase .
+>it is used to abort the rebase process and return your repository to the state it was in before you started the rebase .
 
 <br></br>
 <hr></hr>
@@ -131,7 +131,7 @@ it is used to abort the rebase process and return your repository to the state i
 git log --oneline
 ```
 > ### <ins> Solution: </ins>
-`git log` -> displays the commit history .
+>`git log` -> displays the commit history .
 
 >`--oneline` -> formats the output to show each commit on a single line, displaying only the commit hash and commit message .
 
@@ -140,7 +140,7 @@ git log --oneline
 git rebase -i HEAD~3
 ```
 > ### <ins> Solution: </ins>
-this command starts an interactive rebase for the last three commits in the current branch .
+>this command starts an interactive rebase for the last three commits in the current branch .
 
 >it allows to edit, reorder, squash, or drop commits in a clean and controlled way.
 
@@ -163,7 +163,7 @@ this command starts an interactive rebase for the last three commits in the curr
     git rebase --continue
     ```
     > ### <ins> Solution: </ins>
-    it is used to continue a rebase operation after resolving conflicts that occurred during the rebase process .
+    >it is used to continue a rebase operation after resolving conflicts that occurred during the rebase process .
 
 <br></br>
 <hr></hr>
@@ -176,7 +176,7 @@ this command starts an interactive rebase for the last three commits in the curr
 git log --oneline
 ```
 > ### <ins> Solution: </ins>
-`git log` -> displays the commit history .
+>`git log` -> displays the commit history .
 
 >`--oneline` -> formats the output to show each commit on a single line, displaying only the commit hash and commit message .
 
@@ -185,7 +185,7 @@ git log --oneline
 git cherry-pick <commit-hash>
 ```
 > ### <ins> Solution: </ins>
-the command is used to apply the changes introduced by a specific commit from one branch to another branch .
+>the command is used to apply the changes introduced by a specific commit from one branch to another branch .
 
 > it creates a new commit on the current branch that duplicates the changes from the referenced commit .
 
@@ -195,7 +195,7 @@ git add .
 git cherry-pick --continue
 ```
 > ### <ins> Solution: </ins>
-`git add .` -> add all the files and changes to staging area .
+>`git add .` -> add all the files and changes to staging area .
 
 >`git cherry-pick --continue` -> is used to continue a cherry-pick operation after resolving conflicts during the process of cherry-picking a commit .
 
@@ -210,7 +210,7 @@ git cherry-pick --continue
 git tag -a v1.0 -m "Initial release"
 ```
 > ### <ins> Solution: </ins>
-`tag` -> creates a tag in git . tags are used to mark specific points in the commit history, often for releases or important milestones .
+>`tag` -> creates a tag in git . tags are used to mark specific points in the commit history, often for releases or important milestones .
 
 > ` -a v1.0 ` -> Specifies the tag name (v1.0) 
 
@@ -224,7 +224,7 @@ this message is stored with the tag and can be viewed later .
 git tag
 ```
 > ### <ins> Solution: </ins>
-it is used to create, list, and manage tags in a Git repository . 
+>it is used to create, list, and manage tags in a Git repository . 
 
 > tags are typically used to mark specific points in the history of a repository, such as release points .
 
@@ -236,7 +236,7 @@ it is used to create, list, and manage tags in a Git repository .
 git tag -a v1.1 <commit-hash> -m "Bug fix"
 ```
 > ### <ins> Solution: </ins>
-`git tag -a` -> this creates an annotated tag.
+>`git tag -a` -> this creates an annotated tag.
 
 > `v1.1` -> this is the name of the tag you are creating. in this case, it is v1.1.
 
@@ -252,14 +252,14 @@ git tag -a v1.1 <commit-hash> -m "Bug fix"
 git push origin v1.0
 ```
 > ### <ins> Solution: </ins>
-it  is used to push the tag `v1.0` to the remote repository .
+>it  is used to push the tag `v1.0` to the remote repository .
 
 ## 2. Push all tags to the remote repository :
 ```bash
 git push --tags
 ```
 > ### <ins> Solution: </ins>
-it is used to push all local tags in your git repository to the remote repository .
+>it is used to push all local tags in your git repository to the remote repository .
 
 <br></br>
 <hr></hr>
@@ -272,7 +272,7 @@ it is used to push all local tags in your git repository to the remote repositor
 git remote add origin https://github.com/username/repo.git
 ```
 > ### <ins> Solution: </ins>
-it is used to add a remote repository to your local Git repository .
+>it is used to add a remote repository to your local Git repository .
 
 # <ins> Task 13 : Fetch Changes from Remote </ins>
 ## 1. Fetch changes from the remote repository without merging them :
@@ -280,14 +280,14 @@ it is used to add a remote repository to your local Git repository .
 git fetch origin
 ```
 > ### <ins> Solution: </ins>
-it is used to update your local repository with the latest changes from the remote repository, without merging them into your working branch .
+>it is used to update your local repository with the latest changes from the remote repository, without merging them into your working branch .
 
 ## 2. View fetched branches :
 ```bash
 git branch -r
 ```
 > ### <ins> Solution: </ins>
-it  is used to list all remote branches in your Git repository .
+>it  is used to list all remote branches in your Git repository .
 
 <br></br>
 
@@ -297,7 +297,7 @@ it  is used to list all remote branches in your Git repository .
 git pull origin main
 ```
 > ### <ins> Solution: </ins>
-is used to update your local `main` branch with the latest changes from the `main` branch on the remote repository (`origin`) .
+>is used to update your local `main` branch with the latest changes from the `main` branch on the remote repository (`origin`) .
 
 <br></br>
 
@@ -307,7 +307,7 @@ is used to update your local `main` branch with the latest changes from the `mai
 git push origin main
 ```
 > ### <ins> Solution: </ins>
-it is used to push the commits in your local `main` branch to the `main` branch on the remote repository (referred to as `origin`) .
+>it is used to push the commits in your local `main` branch to the `main` branch on the remote repository (referred to as `origin`) .
 
 
 ## 2. Push a new branch to the remote repository :
@@ -315,7 +315,7 @@ it is used to push the commits in your local `main` branch to the `main` branch 
 git push origin feature-branch
 ```
 > ### <ins> Solution: </ins>
-it is used to push the local branch `feature-branch` to the remote repository under the same name (`feature-branch`) .
+>it is used to push the local branch `feature-branch` to the remote repository under the same name (`feature-branch`) .
 
 <br></br>
 
@@ -325,7 +325,7 @@ it is used to push the local branch `feature-branch` to the remote repository un
 git push origin --delete feature-branch
 ```
 > ### <ins> Solution: </ins>
-is used to delete the remote branch named `feature-branch` from the remote repository .
+>it is used to delete the remote branch named `feature-branch` from the remote repository .
 
 
 <br></br>
@@ -341,7 +341,7 @@ is used to delete the remote branch named `feature-branch` from the remote repos
 git clone https://github.com/your-username/repo.git
 ```
 > ### <ins> Solution: </ins>
-it is used create a local copy of a remote repository from GitHub to the local machine .
+>it is used create a local copy of a remote repository from GitHub to the local machine .
 
 <br></br>
 
@@ -351,7 +351,7 @@ it is used create a local copy of a remote repository from GitHub to the local m
 git checkout -b fix-typo
 ```
 > ### <ins> Solution: </ins>
-it creates a new branch and switch to it .
+>it creates a new branch and switch to it .
 
 ## 2. Make changes to the code (e.g., fix a typo in `README.md`), stage, and commit them :
 ```bash
@@ -359,7 +359,7 @@ git add README.md
 git commit -m "Fixed typo in README.md"
 ```
 > ### <ins> Solution: </ins>
-this add README.md file with a commit message to the staging area .
+>this add README.md file with a commit message to the staging area .
 
 <br></br>
 
@@ -369,7 +369,7 @@ this add README.md file with a commit message to the staging area .
 git push origin fix-typo
 ```
 > ### <ins> Solution: </ins>
-it is use to push the changes to the repository .
+>it is use to push the changes to the repository .
 
 <br></br>
 
@@ -385,14 +385,14 @@ it is use to push the changes to the repository .
 git remote add upstream https://github.com/original-owner/repo.git
 ```
 > ### <ins> Solution: </ins>
-it is used to add a new remote repository named `upstream` to your local git configuration . 
+>it is used to add a new remote repository named `upstream` to your local git configuration . 
 
 ## 2. Fetch changes from the original repository :
 ```bash
 git fetch upstream
 ```
 > ### <ins> Solution: </ins>
-it is used to fetch changes from the remote repository named `upstream` without merging them into your local branch . 
+>it is used to fetch changes from the remote repository named `upstream` without merging them into your local branch . 
 
 ## 3. Merge changes from the original repository into your local branch :
 ```bash
@@ -400,7 +400,7 @@ git checkout main
 git merge upstream/main
 ```
 > ### <ins> Solution: </ins>
-`git checkout main` -> switches to your local main branch.
+>`git checkout main` -> switches to your local main branch.
 
 > `git merge upstream/main` -> merges the changes from the remote-tracking branch `upstream/main` into your local main branch.
 
@@ -409,7 +409,7 @@ git merge upstream/main
 git push origin main
 ```
 > ### <ins> Solution: </ins>
-it is used to push the commits in your local `main` branch to the `main` branch on the remote repository (referred to as `origin`) .
+>it is used to push the commits in your local `main` branch to the `main` branch on the remote repository (referred to as `origin`) .
 
 <br></br>
 <hr></hr>

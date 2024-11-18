@@ -7,7 +7,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
 ```
 > ### <ins> Solution: </ins>
- git config is used to configure git settings, such as username, email .
+>git config is used to configure git settings, such as username, email .
 
 >Using `--global` applies the settings globally for all repositories.
 
@@ -16,7 +16,7 @@ git config --global user.email "your-email@example.com"
 git config --list
 ```
 > ### <ins> Solution: </ins>
- displays a list of all the git configuration settings currently in effect .
+>displays a list of all the git configuration settings currently in effect .
 
 >it includes global, system, and local configurations, showing details like username, email, and other preferences .  
 
@@ -29,7 +29,7 @@ mkdir MyProject
 cd MyProject
 ```
 > ### <ins> Solution: </ins>
- `mkdir folder_name` -> it is used to make new folder in current directory.
+>`mkdir folder_name` -> it is used to make new folder in current directory.
 
 >`cd folder_name` -> it is used move into the folder
 
@@ -38,7 +38,7 @@ cd MyProject
 git init
 ```
 > ### <ins> Solution: </ins>
- git init is used to initializes a new git repository in the current directory .
+>git init is used to initializes a new git repository in the current directory .
 
 >it creates a hidden .git folder that tracks version control data .
 
@@ -50,7 +50,7 @@ git init
 echo "my first project" > README.md
 ```
 > ### <ins> Solution: </ins>
- this is used to make a new file named README.md in the current directory with the text entered in the double quotes .
+>this is used to make a new file named README.md in the current directory with the text entered in the double quotes .
 
 > `>` -> redirects the output to a file .
 
@@ -59,14 +59,14 @@ echo "my first project" > README.md
 git add README.md
 ```
 > ### <ins> Solution: </ins>
- this is use to add a particular file to the git .
+>this is use to add a particular file to the git .
 
 ## 3. Commit the file :
 ```bash
 git commit -m "initial commit"
 ```
 > ### <ins> Solution: </ins>
- this is used to save the changes to the local repository .
+>this is used to save the changes to the local repository .
 
 > it is used with the `-m` flag to provide a commit message that describes the changes you are committing .
 > commit message is written in `" "` .
@@ -76,7 +76,7 @@ git commit -m "initial commit"
 echo "added a description" >> README.md
 ```
 > ### <ins> Solution: </ins>
- this is used to append the text "added a description" to the README.md file in your repository .
+>this is used to append the text "added a description" to the README.md file in your repository .
 
 > if the file does nnot exist , the file will be created .
 
@@ -86,7 +86,7 @@ git add README.md
 git commit -m "updated README.md with a description"
 ```
 > ### <ins> Solution: </ins>
- this is used to add updated file to the staging area with the commit message about what changes have been done.
+>this is used to add updated file to the staging area with the commit message about what changes have been done.
 
 <br></br>
 
@@ -96,7 +96,7 @@ git commit -m "updated README.md with a description"
 git status
 ```
 > ### <ins> Solution: </ins>
- it is used to check the status of the current working directory and staging area .
+>it is used to check the status of the current working directory and staging area .
 
 > it provides information about the untracked files ,changes not staged for commit, changes to be committed .
 
@@ -106,7 +106,7 @@ git status
 git log --oneline --graph --decorate
 ```
 > ### <ins> Solution: </ins>
- this command provides a concise, visual representation of your commit history in git .
+>this command provides a concise, visual representation of your commit history in git .
 
 > `--oneline` -> displays each commit on a single line, showing only the abbreviated commit hash and the commit message .
 
@@ -123,7 +123,7 @@ git log --oneline --graph --decorate
 git clone http://codinggita.com/example-repo
 ```
 > ### <ins> Solution: </ins>
- it is used to create a local copy of a remote git repository .
+>it is used to create a local copy of a remote git repository .
 
 > it will download all the files, history, and branches from a remote repository and set up a local version on your machine .
 
@@ -145,7 +145,7 @@ git clone http://codinggita.com/example-repo
    ```
 
 > ### <ins> Solution: </ins>
- this workflow will first make a file with some content and then it will be added to the staging area with a commit message describing about the work/changes done .
+>this workflow will first make a file with some content and then it will be added to the staging area with a commit message describing about the work/changes done .
 
 <br></br>
 <hr></hr>
@@ -160,7 +160,7 @@ git branch feature-login
 git checkout feature-login
 ```
 > ### <ins> Solution: </ins>
- `branch` -> it is used to make a new branch in git repository .
+>`branch` -> it is used to make a new branch in git repository .
 
 >`checkout` -> it is used to switch the branch to the newly made branch .
 
@@ -170,7 +170,7 @@ git checkout feature-login
 git checkout -b feature-login
 ```
 > ### <ins> Solution: </ins>
- `checkout -b` -> is used to make a new branch in git repository and switch the branch to the newly made branch .
+>`checkout -b` -> is used to make a new branch in git repository and switch the branch to the newly made branch .
 
 ## 2. Add a new file and commit changes :
 ```bash
@@ -179,7 +179,7 @@ git add login.html
 git commit -m "added login page"
 ```
 > ### <ins> Solution: </ins>
- `echo` -> it will create a new file .
+>`echo` -> it will create a new file .
 
 >`add` -> it will add the new file to the git .
 
@@ -191,7 +191,7 @@ git checkout main
 git merge feature-login
 ```
 > ### <ins> Solution: </ins>
- `checkout` -> it will switch the branch to main .
+>`checkout` -> it will switch the branch to main .
 
 >`merge` -> it will integrate changes from one branch into another .
 
@@ -204,7 +204,7 @@ git branch branch-A
 git branch branch-B
 ```
 > ### <ins> Solution: </ins>
- this will make two different branches , branch-A and branch-B .
+>this will make two different branches , branch-A and branch-B .
 
 ## 2. Modify the same line in README.md in both brnaches.
 ## 3. Merge `branch-A`  into `main` :
@@ -213,7 +213,7 @@ git checkout main
 git merge branch-A
 ```
 > ### <ins> Solution: </ins>
-the branch will switch to main and the changes will integrate to main branch .
+>the branch will switch to main and the changes will integrate to main branch .
 
 ## 4. Attempt to merge `branch-B`  into `main`(this will cause a conflict) :
 ```bash
@@ -221,7 +221,7 @@ git merge branch-B
 ```
 
 > ### <ins> Solution: </ins>
-this will cause a conflict beacuse of different data at a single place in the files that are trying to get merged .
+>this will cause a conflict beacuse of different data at a single place in the files that are trying to get merged .
 
 
  ##  <ins> To resolve the conflict :- </ins>
@@ -241,7 +241,7 @@ git add READEME.md
 git commit -m "resolved merge conflict between branch-A and branch-B "
 ```
 > ### <ins> Solution: </ins>
-this will add the file and commit the changes done .
+>this will add the file and commit the changes done .
 
 <br></br>
 
@@ -251,14 +251,14 @@ this will add the file and commit the changes done .
 git branch -m old-branch-name new-branch-name
 ```
 > ### <ins> Solution: </ins>
-it is use to rename a branch .
+>it is use to rename a branch .
 
 ## 2. Delete a Branch :
 ```bash
 git branch -d feature-login
 ```
 > ### <ins> Solution: </ins>
-it is use to delete a branch .
+>it is use to delete a branch .
 
 <br></br>
 <hr></hr>
@@ -271,28 +271,28 @@ it is use to delete a branch .
 echo "temporary work" >> temp.md
 ```
 > ### <ins> Solution: </ins>
-it will make a new file name temp.md and have a content "temporary work"
+>it will make a new file name temp.md and have a content "temporary work"
 
 ## 2. Stash the chnages :
 ```bash
 git stash
 ```
 > ### <ins> Solution: </ins>
-it is used to temporarily save changes in your working directory that you don't want to commit yet but need to set aside to work on something else
+>it is used to temporarily save changes in your working directory that you don't want to commit yet but need to set aside to work on something else
 
 ## 3. View stashed changes :
 ```bash
 git stash list
 ```
 > ### <ins> Solution: </ins>
-it is used to display a list of all the stashes you have saved in your repository .
+>it is used to display a list of all the stashes you have saved in your repository .
 
 ## 4. Apply the stashed changes :
 ```bash
 git stash apply
 ```
 > ### <ins> Solution: </ins>
-it is used to reapply the changes saved in the most recent stash or a specific stash without removing it from the stash list .
+>it is used to reapply the changes saved in the most recent stash or a specific stash without removing it from the stash list .
 
 
 ## 5. Drop the stash after applying :
@@ -300,7 +300,7 @@ it is used to reapply the changes saved in the most recent stash or a specific s
 git stash drop
 ```
 > ### <ins> Solution: </ins>
-it is used to delete a specific stash from the stash list .
+>it is used to delete a specific stash from the stash list .
 
 >This is useful when you no longer need a stash and want to clean up your stash list .
 
@@ -314,14 +314,14 @@ echo "Commit 2" > file2.txt && git add file2.txt && git commit -m "Commit 2"
 echo "Commit 3" > file3.txt && git add file3.txt && git commit -m "Commit 3"
 ```
 > ### <ins> Solution: </ins>
-the commands create three new files (`file1.txt`, `file2.txt`, `file3.txt`), add content to them, and commit each one to the git repository with a unique commit message .
+>the commands create three new files (`file1.txt`, `file2.txt`, `file3.txt`), add content to them, and commit each one to the git repository with a unique commit message .
 
 ## 2. Squash commits into one :
 ```bash
 git rebase -i HEAD~3
 ```
 > ### <ins> Solution: </ins>
-this command starts an interactive rebase for the last three commits in the current branch .
+>this command starts an interactive rebase for the last three commits in the current branch .
 
 >it allows to edit, reorder, squash, or drop commits in a clean and controlled way.
 
@@ -333,14 +333,14 @@ this command starts an interactive rebase for the last three commits in the curr
 git checkout -b cherry-pick-example
 ```
 > ### <ins> Solution: </ins>
-the commands create a new branch and switch to the the branch created .
+>the commands create a new branch and switch to the the branch created .
 
 ## 2. Cherry-pick a specific commit from another branch :
 ```bash
 git cherry-pick <commit-hash>
 ```
 > ### <ins> Solution: </ins>
-the command is used to apply the changes introduced by a specific commit from one branch to another branch .
+>the command is used to apply the changes introduced by a specific commit from one branch to another branch .
 
 > it creates a new commit on the current branch that duplicates the changes from the referenced commit .
 
@@ -352,7 +352,7 @@ the command is used to apply the changes introduced by a specific commit from on
 git tag -a v1.0 -m "Version 1.0 release"
 ```
 > ### <ins> Solution: </ins>
-`tag` -> creates a tag in git . tags are used to mark specific points in the commit history, often for releases or important milestones .
+>`tag` -> creates a tag in git . tags are used to mark specific points in the commit history, often for releases or important milestones .
 
 > ` -a v1.0 ` -> Specifies the tag name (v1.0) 
 
@@ -366,7 +366,7 @@ this message is stored with the tag and can be viewed later .
 git push origin v1.0
 ```
 > ### <ins> Solution: </ins>
-it is used to push the branch or tag named `v1.0` to the remote repository named origin .
+>it is used to push the branch or tag named `v1.0` to the remote repository named origin .
 
 <br></br>
 
@@ -376,14 +376,14 @@ it is used to push the branch or tag named `v1.0` to the remote repository named
 git remote add origin <repository-url>
 ```
 > ### <ins> Solution: </ins>
-it is used to add a remote repository to your local Git repository .
+>it is used to add a remote repository to your local Git repository .
 
 ## 2. Push your changes to the remote repository :
 ```bash
 git push origin main
 ```
 > ### <ins> Solution: </ins>
-it is used to push the the changes from your local main branch to the main branch on the remote repository named origin .
+>it is used to push the the changes from your local main branch to the main branch on the remote repository named origin .
 
 <br></br>
 
@@ -394,7 +394,7 @@ it is used to push the the changes from your local main branch to the main branc
 git clone <forked-repo-url>
 ```
 > ### <ins> Solution: </ins>
-it is used to create a local copy of a repository from a remote source.
+>it is used to create a local copy of a repository from a remote source.
 
 ## 3. Create a new branch, make changes, and push :
 ```bash
@@ -405,7 +405,7 @@ git commit -m "Fixed a typo"
 git push origin fix-typo
 ```
 > ### <ins> Solution: </ins>
-`checkout -b` -> use to make a new branch and switch to it .
+>`checkout -b` -> use to make a new branch and switch to it .
 
 > ` echo "content" >> file_name` -> use to make new file and add content in it .
 
@@ -434,7 +434,7 @@ git push origin fix-typo
 echo "node_modules/" > .gitignore
 ```
 > ### <ins> Solution: </ins>
-it  adds the `node_modules/` directory to a `.gitignore` file, which tells git to ignore the `node_modules` directory in the version control system .
+>it  adds the `node_modules/` directory to a `.gitignore` file, which tells git to ignore the `node_modules` directory in the version control system .
 
 
 ## 2. Add files and ensure ignored files are not staged :
@@ -442,4 +442,4 @@ it  adds the `node_modules/` directory to a `.gitignore` file, which tells git t
 git add .
 ```
 > ### <ins> Solution: </ins>
-it adds all the files to the git from your local machine .
+>it adds all the files to the git from your local machine .
